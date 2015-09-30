@@ -1,0 +1,50 @@
+{
+  "author": "John Weis <weis.john@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/weisjohn/base-command/issues"
+  },
+  "description": "A rebuild of the gcfdayton site from the ground up.",
+  "dependencies": {
+    "async": "^1.4.2",
+    "bunyan": "^1.5.1",
+    "bunyan-express": "^1.0.0",
+    "lodash": "^3.10.1",
+    "express": "^4.13.3",
+    "jshint": "^2.8.0",
+    "mongoose": "^4.1.9",
+    "mongoose-csv": "^1.0.0",
+    "mongoose-bcrypt-simple": "^1.0.1",
+    "mongoose-deleted": "^1.4.1",
+    "mongoose-history-log": "^1.0.0",
+    "mongoose-reference-validator": "^1.0.0",
+    "mongoose-simple-fixtures": "^1.8.0",
+    "nconf": "^0.8.0",
+    "passport": "^0.3.0",
+    "should": "^7.1.0",
+    "supertest": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  },
+  "homepage": "https://github.com/weisjohn/base-command#readme",
+  "keywords": [
+    "express",
+    "mongoose",
+    "redis",
+    "react",
+    "starter"
+  ],
+  "license": "MIT",
+  "main": "server.js",
+  "name": "base-command",  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weisjohn/base-command.git"
+  },
+  "scripts": {
+    "jshint": "node_modules/jshint/bin/jshint .",
+    "start": "node server.js | bunyan",
+    "test": "mocha -R spec test/* --timeout 8000"
+  },
+  "version": "0.0.1"
+}

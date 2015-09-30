@@ -1,0 +1,7 @@
+{
+    "mongo" : {
+        "connection": {
+            "name": "base-command"
+        }
+    }
+}
