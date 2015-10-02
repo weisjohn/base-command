@@ -13,7 +13,7 @@ before(function(done) {
 
 describe('/', function() {
     it('get', function(done) {
-        agent.get('/index/')
+        agent.get('/')
             .expect(200)
             .expect({ hello : 'world' })
             .end(done);
