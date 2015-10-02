@@ -32,6 +32,7 @@ async.eachSeries([
 }, function(err) {
     app.set('logger', require('./lib/logger')('server'));
     middleware();
+    app.emit('start');
 });
 
 function middleware() {
